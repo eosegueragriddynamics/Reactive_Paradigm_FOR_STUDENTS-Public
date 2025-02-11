@@ -11,9 +11,12 @@ Install [Docker](https://docs.docker.com/desktop/mac/install/) and [Docker Compo
     
 2. Build and run apps with Docker Compose.
     - `docker-compose up --build`
-    
-3. Stop **Product Info service** _(for testing)_
+
+4. Call new api and see response and logs
+    - `GET: http://localhost:8083/api/orders/user2`
+
+4. Stop **Product Info service** _(for testing)_
     - `docker-compose stop product-info-service`
     
-4. Start **Product Info service** _(for testing)_
+5. Start **Product Info service** _(for testing)_
     - `docker-compose start product-info-service`
