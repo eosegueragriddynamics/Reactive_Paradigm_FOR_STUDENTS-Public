@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  main:
+    web-application-type: reactive
+  application:
+    name: reactive_paradigm_project_edom
+  data:
+    mongodb:
+      uri: mongodb://root:pwd@mongo:27017/admin?authSource=admin
+
+external:
+  order-search-service:
+    url: http://order-search-service:8080
+  product-info-service:
+    url: http://product-info-service:8080
+    timeout: 20s

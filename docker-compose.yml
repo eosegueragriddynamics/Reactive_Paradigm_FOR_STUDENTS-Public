@@ -34,3 +34,10 @@ services:
     image: product-info-service
     ports:
       - 8082:8080
+  user-info-service:
+    build:
+      context: ./reactive_paradigm_project_edom
+      dockerfile: Dockerfile
+    image: user-info-service
+    ports:
+      - 8083:8080
